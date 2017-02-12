@@ -1,0 +1,10 @@
+version: '2'
+services:
+    heartmonitor-elasticsearch:
+        container_name: heartmonitor-elasticsearch
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/heartMonitor/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
